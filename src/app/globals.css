@@ -223,9 +223,10 @@ span.text-red {
   margin: 10px 0 5px;
 }
 .footer-banner-container {
-  padding: 100px 40px;
-  background-color: #d6a1a1;
-  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #c7dde2;
   position: relative;
   height: 400px;
   line-height: 1;
@@ -238,40 +239,47 @@ span.text-red {
   justify-content: space-between;
 }
 .banner-desc button {
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 10px 16px;
-  background-color: white;
-  color: red;
+  background-color: #ffffff;
+  color: #000000;
   border: none;
   margin-top: 40px;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
 }
-.banner-desc .left h3 {
-  font-weight: 900;
-  font-size: 80px;
-  margin-left: 25px;
+.banner-desc .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
-.banner-desc .left p {
-  margin: 18px;
-}
+
 .footer-banner-image {
   position: absolute;
   /* top: -35%;
   left: 8%; */
   top: -25%;
-  left: 25%;
 }
 .banner-desc .right {
+  width: 50%;
   line-height: 1.4;
 }
-.banner-desc .right h3 {
+.banner-desc .right h1 {
   font-weight: 800;
   font-size: 60px;
 }
+.banner-desc .right h3 {
+  font-weight: 300;
+  font-size: 30px;
+  padding: 10px 0;
+}
 .banner-desc .right p {
-  font-size: 18px;
+  font-size: 16px;
+  width: 75%;
+  line-height: 1.5;
+  color: #494848;
 }
 .banner-desc .right .company-desc {
   font-size: 14px;
