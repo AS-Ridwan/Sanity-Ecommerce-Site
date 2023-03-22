@@ -15,7 +15,9 @@
     "sanity"
   ],
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@sanity/vision": "^3.0.0",
+    "font-awesome-icons": "^1.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",

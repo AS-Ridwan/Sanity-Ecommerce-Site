@@ -3,11 +3,17 @@ import product from "ecommerce/schemas/product";
 import React from "react";
 import { client } from "../../lib/client";
 import "../app/globals.css";
-import { Product, FooterBanner, HeroBnner } from "../../components/index";
+import {
+  Product,
+  FooterBanner,
+  HeroBnner,
+  Header,
+} from "../../components/index";
 
 const Home = ({ products, bannerData }) => {
   return (
     <>
+      <Header></Header>
       <HeroBnner heroBanner={bannerData.length && bannerData[0]} />
 
       <div className="products-heading">

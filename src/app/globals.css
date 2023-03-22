@@ -21,15 +21,15 @@ a {
   margin: auto;
   width: 100%;
 }
-.layout {
+/* .layout {
   padding: 10px;
-}
+} */
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  margin: 6px 18px;
-  position: relative;
+  width: 70%;
+  margin: 15px auto;
 }
 .marquee-text {
   font-size: 29px;
@@ -68,8 +68,9 @@ span.text-red {
   margin-left: 6px;
 }
 .logo {
-  color: gray;
-  font-size: 18px;
+  color: #ea9903;
+  font-size: 20px;
+  font-weight: 700;
 }
 .cart-icon {
   font-size: 25px;
@@ -131,7 +132,7 @@ span.text-red {
 }
 
 .hero-banner-container {
-  padding: 100px 40px;
+  padding: 100px 0px;
   /* background-color: #dcdcdc; */
   background-image: url(../../src/img/slider-1.jpg);
   position: relative;
@@ -140,7 +141,7 @@ span.text-red {
   width: 100%;
 }
 .hero-banner-inner {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 .hero-banner-container .beats-solo {
@@ -222,6 +223,50 @@ span.text-red {
   color: #ea9903;
   margin: 10px 0 5px;
 }
+/* subs section */
+/* subs section */
+.subs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 110px 40px;
+}
+.subs-container h1 {
+  font-size: 40px;
+  width: 60%;
+  /* display: flex; */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subs-container input[type="text"] {
+  width: 700px;
+  height: 80px;
+  background: #f0f0f0;
+  border: none;
+  outline: none;
+  border-radius: 10px 0 0 10px;
+  padding-left: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.subs-container button {
+  padding: 30px 50px;
+  background: #ea9903;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  /* left: 906px; */
+  /* position: absolute; */
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffff;
+  cursor: pointer;
+}
+
+/* subs section */
+/* subs section */
+
 .footer-banner-container {
   display: flex;
   flex-direction: column;
@@ -232,7 +277,7 @@ span.text-red {
   line-height: 1;
   color: rgb(0, 0, 0);
   width: 100%;
-  margin-top: 120px;
+  margin: 140px 0 30px;
 }
 .banner-desc {
   display: flex;
@@ -305,21 +350,20 @@ span.text-red {
 }
 
 .footer-container {
-  color: #324d67;
+  color: #4f5f6f;
   text-align: center;
-  margin-top: 20px;
+
   padding: 30px 10px;
-  font-weight: 700;
+  font-weight: 600;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   justify-content: center;
 }
-.footer-container .icons {
+.footer-container i {
   font-size: 30px;
-  display: flex;
-  gap: 10px;
+  padding: 10px;
 }
 .cart-heading {
   display: flex;
