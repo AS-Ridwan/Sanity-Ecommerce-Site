@@ -8,6 +8,7 @@ const Layout = ({ children }) => {
   return (
     <div className="layout">
       <Head>
+        <link rel="shortcut icon" href="/favicon.PNG" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -15,15 +16,13 @@ const Layout = ({ children }) => {
           crossorigin="anonymous"
           referrerpolicy="no-referrer"
         />
-        <title>Best Shoping Store</title>
+        <title>Shoping Store</title>
       </Head>
       <header>
         <Navbar></Navbar>
       </header>
       <main className="">{children}</main>
-      <section>
-        <Subs></Subs>
-      </section>
+
       <footer>
         <Footer></Footer>
       </footer>

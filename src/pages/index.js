@@ -9,12 +9,13 @@ import {
   HeroBnner,
   Header,
 } from "../../components/index";
+import Subs from "components/Subs";
 
-const Home = ({ products, bannerData }) => {
+const Home = ({ products, bannerData, heroData }) => {
   return (
     <>
       <Header></Header>
-      <HeroBnner heroBanner={bannerData.length && bannerData[0]} />
+      <HeroBnner heroBanner={heroData && heroData[0]} />
 
       <div className="products-heading">
         <h2>Sound You Can Believe In</h2>
@@ -25,7 +26,9 @@ const Home = ({ products, bannerData }) => {
           <Product key={product._id} product={product} />
         ))}
       </div>
+
       <FooterBanner footerBanner={bannerData && bannerData[0]} />
+      <Subs></Subs>
     </>
   );
 };
@@ -36,8 +39,11 @@ export const getServerSideProps = async () => {
   const bannerQuery = '*[_type == "banner"]';
   const bannerData = await client.fetch(bannerQuery);
 
+  const heroQuery = '*[_type == "hero"]';
+  const heroData = await client.fetch(heroQuery);
+
   return {
-    props: { products, bannerData },
+    props: { products, bannerData, heroData },
   };
 };
 
